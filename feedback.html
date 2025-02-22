@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 120px;
+        }
+        .rating {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .rating label {
+            font-weight: normal;
+            margin: 0;
+        }
+        .rating input {
+            width: 40px;
+        }
+        .submit-btn {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Feedback Form</h2>
+        <form action="#" method="post">
+            <label for="name">Name (Optional):</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+            <label for="email">Email (Optional):</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+            <label for="phone">Phone (Optional):</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+            <label for="rating">Rating:</label>
+            <div class="rating">
+                <label for="1">1</label>
+                <input type="radio" id="1" name="rating" value="1">
+                <label for="2">2</label>
+                <input type="radio" id="2" name="rating" value="2">
+                <label for="3">3</label>
+                <input type="radio" id="3" name="rating" value="3">
+                <label for="4">4</label>
+                <input type="radio" id="4" name="rating" value="4">
+                <label for="5">5</label>
+                <input type="radio" id="5" name="rating" value="5">
+            </div>
+
+            <label for="questions">Any Questions regarding product or service:</label>
+            <textarea id="questions" name="questions" placeholder="Ask your questions here..."></textarea>
+
+            <label for="comments">Additional Comments (Optional):</label>
+            <textarea id="comments" name="comments" placeholder="Any additional feedback..."></textarea>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
