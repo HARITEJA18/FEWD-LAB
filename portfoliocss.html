@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari's Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        /* Navbar Styles */
+        header {
+            background-color: #34495e;
+            padding: 10px 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero span {
+            color: #f39c12;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 20px;
+            margin: 20px 0;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        section p, section ul {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        section ul {
+            padding-left: 20px;
+        }
+
+        /* Project Card Styles */
+        .project-card {
+            background-color: #ecf0f1;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            color: #2980b9;
+        }
+
+        .project-card a {
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: bold;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Section Styles */
+        #contact a {
+            display: block;
+            color: #2980b9;
+            margin: 10px 0;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Section Styles */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <h1>Hari's Portfolio</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Hi, I'm <span>Hari</span></h2>
+        <p>Web Developer | Designer | Programmer</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm <strong>Hari</strong>, a passionate web developer and programmer with a strong background in front-end and back-end technologies. I specialize in HTML, CSS, JavaScript, React, and Python.</p>
+        <p>I have worked on multiple real-world projects, including web applications, e-commerce platforms, and AI-based applications. My passion for problem-solving and creating user-friendly applications drives me to continuously learn and improve.</p>
+        <p>When I'm not coding, I enjoy blogging about tech, attending hackathons, and mentoring aspiring developers.</p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <h3>Bachelor's in Computer Science</h3>
+                <p><strong>KMIT</strong> (2022 - 2026)</p>
+                <p>Graduated with a CGPA of 8.5. Specialized in Web Development, AI, and Machine Learning.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li> Winner of Hackathon 2023 - Developed an AI-based chatbot for customer support.</li>
+            <li> Built a Portfolio Website - Designed a fully responsive and interactive personal website.</li>
+        </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript & React</li>
+            <li>Python & Django</li>
+            <li>Node.js & Express</li>
+            <li>SQL & MongoDB</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <h3>Weather App</h3>
+            <p>An app that fetches real-time weather data for any city using an API.</p>
+            <a href="https://yourprojectlink.com" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A stylish, responsive portfolio website to showcase my skills and projects.</p>
+            <a href="https://yourprojectlink.com" target="_blank">View Project</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <a href="mailto:vhariteja94@gmail.com"> Email: vhariteja94@gmail.com</a><br>
+        <a href="https://linkedin.com/in/hari1718" target="_blank">LinkedIn: linkedin.com/in/hari1718</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Hari's Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
